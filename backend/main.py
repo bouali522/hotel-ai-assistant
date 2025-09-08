@@ -15,7 +15,7 @@ class State(TypedDict):
 
 graph_builder = StateGraph(State)
 
-os.environ["AZURE_OPENAI_API_KEY"] = "18c998289801424ebd09ca57508119ac"
+os.environ["AZURE_OPENAI_API_KEY"] = os.environ.get("AZURE_OPENAI_API_KEY")
 os.environ["AZURE_OPENAI_ENDPOINT"] = "https://learningassistant.openai.azure.com/"
 os.environ["OPENAI_API_VERSION"] = "2024-02-15-preview"  # Use a known stable version
 
