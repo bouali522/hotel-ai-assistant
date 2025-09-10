@@ -41,6 +41,7 @@ function App() {
       <div className="app-container">
         <div className="chat-wrapper">
           <Routes>
+            <Route path="/" element={<ChatPage />} />
             <Route path="/chat" element={<ChatPage />} />
             <Route path="/dashboard" element={
               <div className="p-4">
